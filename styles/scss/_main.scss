@@ -1,0 +1,474 @@
+.page-wrap {
+  min-height: 1000vh;
+}
+
+.header {
+  border-bottom: 1px solid $black-rbga;
+  background-color: $white;
+  padding: 25px 0;
+  &__btn {
+    @include btn-txt($fs-txt-md1, 45px);
+    &:nth-child(1) {
+      padding: 0 36px;
+    }
+    &:nth-child(2) {
+      padding: 1px 22px;
+    }
+  }
+  &__nav {
+    gap: 30px;
+    &-img {
+      padding-right: 20px;
+    }
+    &-links {
+      gap: 30px;
+    }
+    &-link {
+      @include txt($fs-txt-sm, 20px);
+      color: $black;
+      padding-right: 27px;
+      &:nth-child(4) {
+        padding-right: 12px;
+      }
+      &:nth-child(5) {
+        padding-right: 19px;
+      }
+      &:last-child {
+        padding-right: 0px;
+      }
+    }
+    &-btn {
+      gap: 10px;
+    }
+  }
+}
+
+.main {
+  min-height: calc(100vh - 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__content {
+    display: flex;
+    align-items: center;
+    padding: 55px 0 80px;
+  }
+  &__h1 {
+    @include txt-h($fs-h1, 70px);
+    padding-bottom: 51px;
+    word-break: break-word;
+  }
+  &__txt {
+    @include txt($fs-h6, 35px);
+    padding-bottom: 51px;
+    max-width: 471px;
+    &-flo {
+      @include txt($fs-txt-sm, 25px);
+    }
+  }
+  &__content-tittle {
+    padding: 60px 0;
+    max-width: 552px;
+    width: 100%;
+  }
+  &__img {
+    width: 100%;
+  }
+  &__content-btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding-bottom: 25px;
+  }
+  &__btn {
+    @include btn-txt($fs-txt-md1, 60px);
+    &:nth-child(1) {
+      padding: 1px 42px;
+    }
+    &:nth-child(2) {
+      padding: 0 29px;
+    }
+  }
+}
+
+.section-first {
+  background-color: $orange-300;
+  padding: 100px 0;
+  width: 100%;
+  &__sponsor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+  }
+  &__items {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    gap: 30px;
+    width: 100%;
+  }
+  &__h2 {
+    @include txt-h($fs-h2, 60px);
+    max-width: 720px;
+    text-align: center;
+    word-break: break-word;
+  }
+}
+
+.section-second {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  &__wrap {
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+  }
+  &__content {
+    padding: 90px 0;
+    gap: 30px;
+    &-title {
+      max-width: 493px;
+      width: 100%;
+    }
+  }
+  &__h2 {
+    @include txt-h($fs-h2, 60px);
+    word-break: break-word;
+  }
+  &__txt {
+    @include txt($fs-txt-lg, 30px);
+    padding: 30px 0;
+  }
+  &__link {
+    @include txt-link($fw-600, $fs-txt-lg, 30px);
+    color: $black;
+  }
+  &__img {
+    max-width: 632px;
+    width: 100%;
+  }
+}
+.section-third {
+  background-color: $amber-50;
+  padding: 120px 0 87px;
+  &__wrap {
+    gap: 15px;
+    justify-content: space-around;
+  }
+  &__h2 {
+    padding-bottom: 79px;
+    @include txt-h($fs-h2, 60px);
+    text-align: center;
+    word-break: break-word;
+  }
+  &__logo-wrap {
+    max-width: 325px;
+    padding-bottom: 60px;
+    flex-direction: column;
+
+    &-img {
+      padding-bottom: 26px;
+      width: 100%;
+      max-width: 160px;
+    }
+    &-h6 {
+      @include txt-h($fs-h6, 35px);
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    &-txt {
+      @include txt($fs-txt-lg1, 25px);
+      text-align: center;
+    }
+  }
+}
+
+.section-fourth {
+  background-color: $white;
+  padding: 154px 0 137px;
+  width: 100%;
+  &__wrap {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  &__h2 {
+    padding-bottom: 79px;
+    @include txt-h($fs-h2, 60px);
+    word-break: break-word;
+  }
+  &__logo-wrap {
+    max-width: 408px;
+    width: 100%;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+
+    &-img {
+      &-1 {
+        padding-bottom: 49px;
+        max-width: 145px;
+        width: 100%;
+      }
+      &-2 {
+        padding-bottom: 67px;
+        max-width: 179px;
+        width: 100%;
+      }
+      &-3 {
+        padding-bottom: 58px;
+        max-width: 179px;
+        width: 100%;
+      }
+    }
+    &-h5 {
+      @include txt-h($fs-h5, 40px);
+      padding-bottom: 20px;
+      word-break: break-word;
+    }
+    &-txt {
+      @include txt($fs-txt-lg, 30px);
+      padding-bottom: 26px;
+    }
+    &-link {
+      @include txt($fs-txt-lg, 30px);
+      text-decoration-line: underline;
+      color: $black;
+    }
+  }
+}
+.section-fifth {
+  background-color: $indigo-100;
+  color: $black;
+  &__wrap {
+    padding: 53px 0 105px;
+    gap: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  &__title {
+    max-width: 900px;
+    width: 100%;
+    &-h5 {
+      @include txt($fs-h5, 40px);
+      padding: 10px 0 23px;
+      word-break: break-word;
+    }
+    &-txt {
+      @include txt($fs-txt-sm, 25px);
+      padding-bottom: 7px;
+    }
+  }
+  &__img {
+    max-width: 310px;
+    width: 100%;
+  }
+}
+
+.section-sixth {
+  background-color: $brown-100;
+  color: $black;
+  &__wrap {
+    padding: 80px 0px 84px;
+    gap: 15px;
+    width: 100%;
+  }
+  &__subtitle {
+    gap: 47px;
+    width: 100%;
+    padding: 7px 0;
+    max-width: 710px;
+
+    &-h4 {
+      max-width: 461px;
+      @include txt-h($fs-h4, 50px);
+      margin-left: 20px;
+    }
+    &-img {
+      max-width: 176px;
+      width: 100%;
+    }
+  }
+  &__logo1 {
+    max-width: 36px;
+    width: 100%;
+  }
+  &__logo2 {
+    max-width: 150px;
+    width: 100%;
+  }
+  &__logos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    max-width: 160px;
+    &-wrap {
+      border-left: 1px solid $black;
+      gap: 45px;
+      padding: 26px 60px;
+      width: 100%;
+      max-width: 450px;
+    }
+    &-txt {
+      @include txt($fs-txt-sm, 25px);
+      letter-spacing: 0.75px;
+      color: $black;
+    }
+    &-stars {
+      padding: 20px 0 14px;
+      gap: 7px;
+    }
+  }
+}
+
+.section-seventh {
+  background-color: $white;
+  &__content {
+    flex-direction: column;
+    padding: 165px 0 162px;
+    &-h2 {
+      max-width: 791px;
+      @include txt-h($fs-h1, 75px);
+      text-align: center;
+      color: $black;
+      word-break: break-word;
+    }
+    &-p {
+      max-width: 539px;
+      @include txt($fs-h6, 30px);
+      color: $black;
+      text-align: center;
+    }
+    &-img {
+      max-width: 100%;
+      padding: 25px 0 32px;
+    }
+    &-btn {
+      @include btn-txt($fs-txt-md1, 60px);
+      padding: 0 20px 0 20px;
+    }
+  }
+}
+
+.section-eighth {
+  background-color: $orange-300;
+  &__content {
+    flex-direction: column;
+    padding: 119px 0 161px;
+    width: 100%;
+    &-h2 {
+      max-width: 784px;
+      @include txt-h($fs-h1, 75px);
+      text-align: center;
+      color: $black;
+      word-break: break-word;
+    }
+    &-p {
+      max-width: 438px;
+      @include txt($fs-txt-lg, 30px);
+      color: $black;
+      text-align: center;
+      padding: 29px 0 54px;
+    }
+    &-btn {
+      @include btn-txt($fs-txt-md, 60px);
+      padding: 0 40px 0 40px;
+    }
+  }
+}
+
+.footer {
+  background-color: $grey-200;
+  color: $black;
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 92px 0 95px;
+    gap: 20px;
+  }
+  &__content {
+    max-width: 300px;
+    width: 100%;
+
+    &-h3 {
+      @include txt-h($fs-h3, 50px);
+    }
+    &-img {
+      max-width: 100%;
+      padding: 28px 0 31px;
+    }
+    &-logo {
+      max-width: 100%;
+    }
+    &-txt {
+      @include txt($fs-txt-lg, 30px);
+      padding: 10px 0 15px;
+    }
+    &-link {
+      @include txt-link($fw-600, $fs-txt-lg, 30px);
+      color: $black;
+    }
+  }
+
+  &__top {
+    max-width: 850px;
+    width: 100%;
+    &-cols {
+      width: 25%;
+    }
+    &-list {
+      padding-bottom: 15px;
+    }
+    &-h6 {
+      @include txt-h($fs-txt-lg, 25px);
+      padding-bottom: 21px;
+    }
+    &-links {
+      padding-top: 25px;
+    }
+    &-link {
+      line-height: 15px;
+      color: $black;
+    }
+  }
+
+  &__bottom {
+    border-top: 1px solid $black;
+    padding: 47px 0;
+    gap: 20px;
+
+    &-logo {
+      gap: 15px;
+      &-img {
+        max-width: 100%;
+      }
+      &-txt {
+        max-width: 301px;
+        @include txt($fs-txt-sm1, 15px);
+        color: $black;
+        text-align: start;
+      }
+    }
+    &-text {
+      padding-right: 75px;
+      &-txt {
+        max-width: 109px;
+        @include txt($fs-txt-sm1, 15px);
+        color: $black;
+        text-align: start;
+      }
+    }
+  }
+}

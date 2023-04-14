@@ -1,0 +1,20 @@
+.btn {
+  cursor: pointer;
+  text-align: center;
+
+  &-white {
+    color: $black;
+    background-color: $white;
+    border: 1px solid $black-rbga;
+  }
+  &-orange {
+    background-color: $orange-500;
+    color: $white;
+    border: none;
+  }
+  &-black {
+    background-color: $black;
+    color: $white;
+    border: none;
+  }
+}

@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "Graphik LCG";
+  src: url("../fonts/GraphikLCG-Regular.woff2") format("woff2"),
+    url("../fonts/GraphikLCG-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Graphik LCG";
+  src: url("../fonts/GraphikLCG-Semibold.woff2") format("woff2"),
+    url("../fonts/GraphikLCG-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+body {
+  font-family: "Graphik LCG", sans-serif;
+}
+
+$white: #ffffff;
+$black: #000000;
+$black-rbga: rgba(0, 0, 0, 0.5);
+$orange-300: #ff9c7d;
+$orange-500: #ff6336;
+$grey-100: #e5e5e5;
+$amber-50: #fff8e4;
+$indigo-100: #c9e8f2;
+$brown-100: #dabc98;
+$grey-200: #eeeeee;
+
+$fs-h1: 65px;
+$fs-h2: 50px;
+$fs-h3: 40px;
+$fs-h4: 35px;
+$fs-h5: 30px;
+$fs-h6: 25px;
+$fs-txt-lg: 20px;
+$fs-txt-lg1: 18px;
+$fs-txt-md: 17px;
+$fs-txt-md1: 16px;
+$fs-txt-sm: 15px;
+$fs-txt-sm1: 12px;
+$fw-400: 400;
+$fw-600: 600;
+
+.header__container {
+  max-width: calc(1338px + 20px * 2);
+  padding: 0 20px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.container {
+  max-width: calc(1290px + 20px * 2);
+  padding: 0 20px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.flex {
+  &-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-wrap {
+    flex-wrap: wrap;
+  }
+  &-start {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
